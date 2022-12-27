@@ -46,12 +46,12 @@ local keyCheck
 for i,v in pairs(keys) do
     if counter == #keys then
         -- NOT WHITELIST
-        game.Players.LocalPlayer:Kick("")
+        game.Players.LocalPlayer:Kick("ํYor not key")
         else
-        if v == _G.Key then
+        if v == _G.UserKeys then
             -- WHITELIST
             print("")
-            keyCheck = _G.Key
+            keyCheck = _G.UserKeys
             key = ""
             else
             counter = counter +1
