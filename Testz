@@ -12,6 +12,7 @@ if not game:IsLoaded() then
 	task.wait(10);
 end;
 
+
 local keys = {
     "Tara-SRIXS-C0MZB-CXNZS-LVXO2-VSEK6-EGFD7",
     "Tara-L30YV-JGHE8-HMK3D-Z9N48-4WEJA-76OJF",
@@ -46,7 +47,7 @@ local keyCheck
 for i,v in pairs(keys) do
     if counter == #keys then
         -- NOT WHITELIST
-        game.Players.LocalPlayer:Kick("ํYor not key")
+        game.Players.LocalPlayer:Kick("")
         else
         if v == _G.Key then
             -- WHITELIST
