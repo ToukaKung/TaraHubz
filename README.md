@@ -12,6 +12,53 @@ if not game:IsLoaded() then
 	task.wait(10);
 end;
 
+local keys = {
+    "Tara-SRIXS-C0MZB-CXNZS-LVXO2-VSEK6-EGFD7",
+    "Tara-L30YV-JGHE8-HMK3D-Z9N48-4WEJA-76OJF",
+	"Tara-UEJDK-Y84X0-OGAR0-P5KX7-Y2ZTO-48NZH",
+	"Tara-24CAZ-825ZA-FJDS1-Y79R4-31LB2-5BV9Z",
+	"Tara-6T7RQ-0JSBG-5UCM9-7VR3J-D5S4X-GYWCS",
+	"Tara-XAWXM-MU6P5-KSLYU-43EGH-3THDO-2LCBM",
+	"Tara-IY1QZ-FB0LJ-IBF2N-9IYAO-M928H-H2C3K",
+	"Tara-3YHRF-K1CKS-DMKPX-X8F24-TJGRH-E6WFS",
+	"Tara-GCX3Q-RN9Z7-R92AH-RX482-RE6PU-QL0G9",
+	"Tara-NXS10-JIQRU-AD9K2-BHLNN-O7QIW-KZNG2",
+	"Tara-NZYRN-O5JTZ-B7A2K-QT0EK-QQ8KE-849W0",
+	"Tara-MGGL4-DNX4W-28DS6-4M3F4-IT8KE-HK5PJ",
+	"Tara-8H9QO-59XK1-RV16I-01DHG-VAN4S-G66XH",
+	"Tara-2SDSR-F3OYO-ZCUIS-TSDW9-B0ERL-QPPQ7",
+	"Tara-0CVOK-LOXQ8-0JQLT-3NLF2-8JYUO-73C9",
+	"Tara-B8W4R-4LY4W-E5TTP-1VZ1L-ZM53S-305S8",
+	"Tara-84KM7-JFMNF-ZNZSY-ZOL0H-HK6IF-QQ2PT",
+	"Tara-JHN53-5IFD3-6XQSS-8FH51-YNXF5-0UF38",
+	"Tara-DUSLM-ZC21Y-5RP5A-QIF6I-5EP50-S2SQA",
+	"Tara-7MJ4W-3AM5I-IFBCC-LMZG4-3EL2U-V6U2B",
+	"Tara-E6JCF-0NNHE-N1L4R-PCIZY-1DVMJ-MPZVH",
+	"Tara-HA0CI-QEQSS-RH7JM-HQL0K-R6TS3-VBXYC",
+	"Tara-8FLWI-ULG91-N403D-ZYQ6Q-EJAGN-IULNC",
+	"Tara-91K0Q-E0ZTO-VB84N-5LADY-OR0AJ-WL9OX",
+	"Tara-3QMNK-9SEP2-7V2OP-31031-PP441-QVXFK",
+	"Tara-LP4FC-SK7H4-FMLAS-QKD4G-XE38V-MYYU2"
+}
+
+local counter = 1
+local keyCheck
+for i,v in pairs(keys) do
+    if counter == #keys then
+        -- NOT WHITELIST
+        game.Players.LocalPlayer:Kick("")
+        else
+        if v == _G.Key then
+            -- WHITELIST
+            print("")
+            keyCheck = _G.Key
+            key = ""
+            else
+            counter = counter +1
+        end
+    end
+end
+
 _G.Settings = {
 
 	Main = {
